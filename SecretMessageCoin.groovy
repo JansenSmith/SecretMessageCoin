@@ -96,6 +96,24 @@ coin = coin.setColor(javafx.scene.paint.Color.DARKGRAY)
 						//.toZMin()//move it down to the flat surface
 			})
 
+suit_red = suit_red.setColor(javafx.scene.paint.Color.RED)
+			.setName("reds")
+			.addAssemblyStep(0, new Transform())
+			.setManufacturing({ toMfg ->
+				return toMfg
+						//.rotx(180)// fix the orientation
+						//.toZMin()//move it down to the flat surface
+			})
+
+suite_black = suit_black.setColor(javafx.scene.paint.Color.BLACK)
+			.setName("blacks")
+			.addAssemblyStep(0, new Transform())
+			.setManufacturing({ toMfg ->
+				return toMfg
+						//.rotx(180)// fix the orientation
+						//.toZMin()//move it down to the flat surface
+			})
+
 return [coin, suit_red, suit_black]
 //return suit_heart
 
